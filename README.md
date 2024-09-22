@@ -81,7 +81,7 @@ To run this project locally, follow these steps:
 The repository is structured as follows:
 
 * [Dataset](./Dataset/E_Commerce.csv/)                          # Directory containing the dataset
-* [Presentation](./Presentation/ShwetaPurushothaman_E-commerce_Capstone.pptx/)                          # Directory for storing PPT
+* [Presentation](./Presentation/)                          # Directory for storing PPT
 * [Python Notebook](./Python%20Notebook/ShwetaPurushothaman_E-commerce_Capstone.ipynb/)  # Main project notebook
 * [Tableau](./Tableau/)               # Directory for Tableau file 
 * README.md                        # This README file
