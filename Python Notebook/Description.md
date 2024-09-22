@@ -1,118 +1,81 @@
-# E-Commerce Capstone Project
-
-This repository contains the code and materials related to the E-commerce Capstone project by **Shweta Purushothaman**. The project focuses on analyzing a dataset from an international e-commerce company to gain insights into customer behavior, product shipments, and applying various machine learning models to improve shipment tracking.
-
-## Table of Contents
-<!--ts-->
-  * [Project Overview](#project-overview)
-  * [Dataset Information](#dataset-information)
-  * [Project Objectives](#project-objectives)
-  * [Tools and Technologies Used](#tools-and-technologies-used)
-  * [Installation Guide](#installation-guide)
-  * [Project Structure](#project-structure)
-  * [Machine Learning Models](#machine-learning-models)
-  * [Results](#results)
-  * [How to Run the Project](#how-to-run-the-project)
-  * [License](#license)
-<!--te-->
+# E-commerce Capstone Project
 
 ## Project Overview
-The E-commerce company provides electronic products and is interested in discovering key insights using advanced machine learning techniques. The project explores shipment tracking and customer satisfaction by analyzing features such as customer ratings, product importance, shipment modes, and more. Machine learning models are applied to classify shipments delivered on time or not.
 
-## Dataset Information
-The dataset used for this project contains **10,999 observations** and **12 variables**, including:
-- `ID`: Customer ID.
-- `Warehouse block`: Warehouse is divided into sections (A, B, C, D, E).
-- `Mode of shipment`: Shipment modes (Ship, Flight, Road).
-- `Customer care calls`: Number of customer calls for shipment inquiries.
-- `Customer rating`: Rating from 1 (Worst) to 5 (Best).
-- `Cost of product`: Price in US dollars.
-- `Prior purchases`: Number of prior purchases made by the customer.
-- `Product importance`: Categorized as low, medium, or high.
-- `Gender`: Male or Female.
-- `Discount offered`: Discount provided on the product.
-- `Weight in grams`: Weight of the product.
-- `Reached on time`: Target variable (1 = Not on time, 0 = On time).
+This project focuses on analyzing an E-commerce dataset using data science techniques. The objective is to extract meaningful insights through Exploratory Data Analysis (EDA) and apply machine learning models for predictive analysis.
 
-## Project Objectives
-- Predict whether shipments are delivered on time or not.
-- Analyze customer ratings and the impact of product importance on delivery.
-- Apply machine learning models and evaluate their performance.
-- Provide visual insights and recommendations.
+## Steps Involved
 
-## Tools and Technologies Used
-- **Python**: The primary language used for data analysis and machine learning.
-- **Jupyter Notebook**: For writing and executing the code.
-- **Pandas, NumPy**: For data manipulation and analysis.
-- **Matplotlib, Seaborn**: For data visualization.
-- **Scikit-learn**: For implementing machine learning models.
-- **GitHub**: Version control and project hosting.
+### Step 1: Perform Exploratory Data Analysis (EDA) on the Dataset
 
-## Installation Guide
+Exploratory Data Analysis (EDA) is the process of studying and exploring datasets to understand their main characteristics, discover patterns, locate outliers, and identify relationships between variables. EDA is typically conducted as a preliminary step before performing formal statistical analyses or modeling.
 
-To run this project locally, follow these steps:
+#### Steps to perform EDA:
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/your-username/ecommerce-capstone.git
-    cd ecommerce-capstone
-    ```
+1. **Data Loading and Basic Exploration**:
+   - Load the dataset and examine its shape (number of rows and columns).
 
-2. **Set up a virtual environment** (recommended):
-    ```bash
-    python -m venv env
-    source env/bin/activate   # On Windows: env\Scripts\activate
-    ```
+2. **Descriptive Statistics**:
+   - Conduct descriptive statistics to obtain:
+     - Count, mean, standard deviation, minimum, maximum
+     - 25%, 50%, 75% percentiles
+     - Data types of each column
 
-3. **Install dependencies**:
-    Install the required Python libraries using the `requirements.txt` file:
-    ```bash
-    pip install -r requirements.txt
-    ```
+3. **Handle Missing Values**:
+   - Identify and handle any missing (NaN/Null) values in the dataset.
 
-4. **Open Jupyter Notebook**:
-    Start the Jupyter notebook server:
-    ```bash
-    jupyter notebook
-    ```
-    Open the `ShwetaPurushothaman_E-commerce_Capstone.ipynb` file in the Jupyter notebook.
+4. **Identify Duplicate Records**:
+   - Locate and remove duplicate records from the dataset.
 
-## Project Structure
-The repository is structured as follows:
+5. **Feature Engineering**:
+   - Create new columns to adjust the dataset for meaningful insights.
 
-```plaintext
-├── data/                            # Directory containing the dataset (optional)
-├── images/                          # Directory for storing output images/graphs
-├── ShwetaPurushothaman_E-commerce_Capstone.ipynb  # Main project notebook
-├── requirements.txt                 # Python libraries required to run the project
-├── README.md                        # This README file
-└── LICENSE                          # Project license
-```
+6. **Correlation Analysis**:
+   - Analyze correlations between different data fields to discover relationships and dependencies.
 
-## Machine Learning Models
+7. **Age Distribution Visualization**:
+   - Visualize the distribution of passenger ages using appropriate plots.
 
-Several machine learning models are applied to predict the target variable (`Reached on time`):
+8. **Skewness and Kurtosis Calculation**:
+   - Calculate skewness (measure of symmetry) and kurtosis (heavy-tailed or light-tailed) of the data.
 
+9. **Outlier Treatment**:
+   - Identify and treat outliers that significantly deviate from the rest of the data.
+
+10. **Hypothesis Testing**:
+    - Conduct hypothesis testing to evaluate the significance of the model building.
+
+### Step 2: Divide Data into Input and Output
+
+- Create `X` as the input (independent variables) and `y` as the output (dependent variable).
+
+### Step 3: Split Data into Train and Test Sets
+
+To ensure our model works effectively, we need to train it first and then test it. We will divide the data into two parts:
+
+- **Training Data (80%)**
+- **Testing Data (20%)**
+
+This will give us `XTraining`, `XTesting`, `yTraining`, and `yTesting`.
+
+### Step 4: Implement Different Machine Learning Models
+
+Since our output variable is binary (i.e., only two valid results), we will employ binary classification techniques. Binary classification is a supervised learning algorithm that categorizes new observations into one of two classes.
+
+#### Common Techniques to Consider:
+
+- **Naive Bayes Model** (Bernoulli Naive Bayes)
 - **Logistic Regression**
-- **Decision Tree Classifier**
-- **Random Forest Classifier**
-- **Support Vector Machine (SVM)**
 - **K-Nearest Neighbors (KNN)**
+- **Support Vector Machines (SVM)**
+- **Decision Tree**
+- **Bagging Decision Tree**
+- **Boosted Decision Tree**
+- **Random Forest Algorithm**
 
-Each model's performance is evaluated using metrics such as accuracy, precision, recall, and F1-score.
+We will use these techniques to identify the best-fit model for the dataset and compare their results.
 
-## Results
+## Conclusion
 
-- The project analyzes the relationship between different variables, such as customer care calls, customer ratings, and shipment delivery times.
-- Machine learning models are compared based on their performance to determine the best fit for the dataset.
+This capstone project aims to provide a thorough understanding of E-commerce data analysis through EDA and machine learning modeling. The insights gained from this project can help drive strategic decisions in the E-commerce sector.
 
-## How to Run the Project
-
-1. Clone this repository to your local machine.
-2. Set up your environment and install the necessary dependencies.
-3. Open the Jupyter notebook and run the cells to execute the code step by step.
-4. Review the output graphs and model evaluations to understand the insights generated by the dataset.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
