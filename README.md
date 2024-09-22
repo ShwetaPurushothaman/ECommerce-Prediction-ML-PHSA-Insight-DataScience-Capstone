@@ -46,7 +46,7 @@ The dataset used for this project contains **10,999 observations** and **12 vari
 - **Pandas, NumPy**: For data manipulation and analysis.
 - **Matplotlib, Seaborn**: For data visualization.
 - **Scikit-learn**: For implementing machine learning models.
-- **GitHub**: Version control and project hosting.
+- **Tableau**: For visualizing using dashboard.
 
 ## Installation Guide
 
@@ -78,7 +78,28 @@ To run this project locally, follow these steps:
     Open the `ShwetaPurushothaman_E-commerce_Capstone.ipynb` file in the Jupyter notebook.
 
 ## Project Structure
+
 The repository is structured as follows:
+```bash
+/project-repo
+    ├── Dataset/
+    │    └── Description.md 
+    │    └── E_Commerce.csv
+    │ 
+    ├── Presentation/
+    │    └── Description.md 
+    │    └── ShwetaPurushothaman_E-commerce_Capstone.pptx
+    │ 
+    ├── Python Notebook/
+    │    └── Description.md 
+    │    └── ShwetaPurushothaman_E-commerce_Capstone.ipynb
+    │ 
+    ├── Tableau/
+    │    └── Description.md 
+    │    └── ShwetaPurushothaman_E-commerce_Capstone.twb
+    │ 
+    └── README.md
+```
 
 * [Dataset](./Dataset/E_Commerce.csv/)                          # Directory containing the dataset
 * [Presentation](./Presentation/)                          # Directory for storing PPT
