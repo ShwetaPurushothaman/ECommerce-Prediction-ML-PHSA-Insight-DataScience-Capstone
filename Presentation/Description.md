@@ -112,4 +112,4 @@ The project concludes that the **Random Forest** algorithm, with Decision Tree a
 ## Dashboard and Presentation Links
 
 - **Tableau Dashboard**: [View the Dashboard](https://public.tableau.com/app/profile/shweta.purushothaman/viz/ShwetaPurushothaman_E-commerce_Capstone/Dashboard1?publish=yes)
-- **Presentation**: [View the Presentation](./Presentation/)
+- **Presentation**: [View the Presentation](https://github.com/ShwetaPurushothaman/ECommerce-Prediction-ML-PHSA-Insight-DataScience-Capstone/edit/main/Presentation)
