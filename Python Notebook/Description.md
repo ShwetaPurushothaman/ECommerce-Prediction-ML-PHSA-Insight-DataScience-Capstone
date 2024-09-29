@@ -8,7 +8,7 @@ This project focuses on analyzing an E-commerce dataset using data science techn
 
 ### Step 1: Perform Exploratory Data Analysis (EDA) on the Dataset
 
-Exploratory Data Analysis (EDA) is the process of studying and exploring datasets to understand their main characteristics, discover patterns, locate outliers, and identify relationships between variables. EDA is typically conducted as a preliminary step before performing formal statistical analyses or modeling.
+Exploratory Data Analysis (EDA) is the process of studying and exploring datasets to understand their main characteristics, discover patterns, locate outliers, and identify relationships between variables. EDA is typically conducted as a preliminary step before performing formal statistical analysis or modeling.
 
 #### Steps to perform EDA:
 
@@ -34,7 +34,7 @@ Exploratory Data Analysis (EDA) is the process of studying and exploring dataset
    - Analyze correlations between different data fields to discover relationships and dependencies.
 
 7. **Age Distribution Visualization**:
-   - Visualize the distribution of passenger ages using appropriate plots.
+   - Visualize the distribution of Customer's age using appropriate plots.
 
 8. **Skewness and Kurtosis Calculation**:
    - Calculate skewness (measure of symmetry) and kurtosis (heavy-tailed or light-tailed) of the data.
