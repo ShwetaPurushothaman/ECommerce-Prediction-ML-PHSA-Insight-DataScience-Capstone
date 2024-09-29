@@ -18,8 +18,3 @@ The dataset contains **10999 observations** and **12 variables**. Below is a lis
 - **Discount offered:** Discount applied to the product.
 - **Weight in grams:** Weight of the product.
 - **Reached on time:** Target variable. A value of 1 indicates the product did not reach on time, and 0 indicates it did.
-
-## Project Objectives
-The purpose of the project is to derive insights from the dataset, answering key questions such as:
-- What was the customer rating, and was the product delivered on time?
-- Is customer satisfaction (based on product importance and customer rating) linked to timely delivery?
